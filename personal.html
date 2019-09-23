@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <link rel = "stylesheet"
+     type = "text/css"
+     href = "colors.css" />
+</head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<body>
+
+
+  <div class="top"><div class="title"></div></div>
+
+
+
+
+  <div class="tab">
+      <button class="tablinks" onclick="tabs(event, 'Aboutme')" id="defaultOpen" >About me</button>
+      <button class="tablinks" onclick="tabs(event, 'Projects')">Projects</button>
+      <button class="tablinks" onclick="tabs(event, 'Resume')">Resume</button>
+      <button class="tablinks" onclick="tabs(event, 'Books')">Books</button>
+      <button class="tablinks" onclick="tabs(event, 'Food')">Food</button>
+
+  </div>
+
+  <div id="Aboutme" class="tabcontent">
+
+        <p>Hello! My name is Noor. <br />
+          I'm an aspiring software engineer and this my personal
+          website. You'll find everything from my projects to my hobbies and other interests.<br/>
+
+          This is my first actual website so it may be a little rusty in some aspects.
+          If you have any tips and/or pointers, I'd love to hear them. </p>
+  </div>
+
+
+
+
+  <div id="Projects" class="tabcontent">
+
+
+
+      <p>Emergency Room <br/>
+        Description
+      </br/></p>
+
+      <p>This website <br/>
+        Description
+      </br/>
+      </p>
+  </div>
+
+  <div id="Resume" class="tabcontent">
+
+        <p> If you'd like to see my Resume, shoot me an email.</p>
+        <p>
+          lightsaud@gmail.com
+        </p>
+
+  </div>
+
+  <div id="Books" class="tabcontent">
+
+        <p> If you'd like to see my Resume, shoot me an email.</p>
+        <p>
+          lightsaud@gmail.com
+        </p>
+  </div>
+
+  <div id="Food" class="tabcontent">
+
+        <p> If you'd like to see my Resume, shoot me an email.</p>
+        <p>
+                lightsaud@gmail.com
+        </p>
+
+  </div>
+
+  <div style="width:100%;height:auto;padding-bottom:1%;position:center;">
+      <img style="width:100%;"src="rain.gif" />
+  </div>
+
+  <h4>Site is still under construction.. :)</h4>
+
+
+
+
+
+
+
+  <script>
+      function tabs(evt, tabname) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(tabname).style.display = "block";
+      evt.currentTarget.className += " active";
+      }
+  </script>
+  <script>
+    document.getElementById("defaultOpen").click();
+  </script>
+
+  
+
+
+
+</div>
+
+
+
+</body>
+</html>

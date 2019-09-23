@@ -1,0 +1,103 @@
+body {
+  background-color: #211e2c;
+  
+  margin: 0;
+  height: 1000px;
+  font-family: Arial;
+
+}
+p {
+  font-family:Times New Roman;;
+  color: #00f2ff;
+}
+
+
+
+.top {
+  margin: 0;
+  position: relative;
+  width: 100%;
+  background-color: black;
+  background-image: url(star.png);
+  height: 300px;
+  opacity: 1;
+  text-align: center;
+  font-family: 'helvetica';
+  font-size: 80px;
+  font-weight: 100;
+  color: #00f2ff;
+}
+
+.title {
+  position: absolute;
+  top: 60%;
+  left: 100px;
+}
+
+h4 {
+  color:#00f2ff;
+}
+
+.Name {
+  text-align: center;
+  text-shadow: 20;
+  color: #00f2ff;
+  font-size: 50px;
+  font-family: fantasy;
+}
+
+.tabcontent p {
+  text-align: center;
+
+  color: white;
+  font-size: 30px;
+
+}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 3px solid #D9B8C4;
+  background-color: #6B2446;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #94fffa;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #345e5c;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid black;
+  border-top: none;
+
+}
+
+.tabcontent {
+  animation: fadeEffect 1s; /* Fading effect takes 1 second */
+}
+
+/* Go from zero to full opacity */
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
